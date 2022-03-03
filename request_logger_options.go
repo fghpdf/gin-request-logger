@@ -1,6 +1,8 @@
 package gin_request_logger
 
+import "go.uber.org/zap"
+
 type Options struct {
-	IsDebug     bool
 	LogResponse bool
+	Logger      *zap.Logger
 }
